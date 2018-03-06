@@ -48,13 +48,13 @@ npm install --save @material/textfield
 
 #### JavaScript Instantiation
 
+See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
+
 ```js
 import {MDCTextField} from '@material/textfield';
 
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 ```
-
-See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
 
 ## Usage Options and Variants
 
@@ -216,9 +216,9 @@ Method Signature | Description
 
 `MDCRipple` instance. When given an `mdc-text-field--box` root element, this is set to the `MDCRipple` instance on the root element. When given an `mdc-text-field--outlined` root element, this is set to the `MDCRipple` instance on the `mdc-text-field__outline` element. Otherwise, the field is set to `null`.
 
-## Integrating `MDCTextField` into Frameworks
+## Usage with Web Frameworks
 
-If you are using a JavaScript framework, such as React or Angular2, you can create an MDC component for your framework by wrapping MDC Web components. Depending on your framework, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).  
+If you are using a JavaScript framework, such as React or Angular2, you can create an MDC component for your framework by wrapping `MDCTextField`. Depending on your framework, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).  
 
 ### `MDCTextFieldAdapter`
 
