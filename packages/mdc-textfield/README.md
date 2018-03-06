@@ -218,7 +218,7 @@ Method Signature | Description
 
 ## Usage with Web Frameworks
 
-If you are using a JavaScript framework, such as React or Angular2, you can create an MDC component for your framework by wrapping `MDCTextField`. Depending on your framework, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).  
+If you are using a JavaScript framework, such as React or Angular2, you can create a Text Field for your framework by wrapping `MDCTextField`. Depending on your framework, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).  
 
 ### `MDCTextFieldAdapter`
 
