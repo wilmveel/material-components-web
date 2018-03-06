@@ -34,9 +34,9 @@ Text fields allow users to input, edit, and select text.
 npm install --save @material/textfield
 ```
 
-## Usage
+## Basic Usage
 
-### HTML Structure
+#### HTML Structure
 
 ```html
 <div class="mdc-text-field">
@@ -45,6 +45,32 @@ npm install --save @material/textfield
   <div class="mdc-line-ripple"></div>
 </div>
 ```
+
+#### JavaScript Instantiation
+
+```js
+import {MDCTextField} from '@material/textfield';
+
+const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+```
+
+See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
+
+## Usage Options and Variants
+
+CSS Class | Description
+--- | ---
+`mdc-text-field` | Mandatory
+`mdc-text-field--upgraded` | Indicates the text field is upgraded, normally by JavaScript
+`mdc-text-field--box` | Styles the text field as a box text field
+`mdc-text-field--outlined` | Styles the text field as an outlined text field
+`mdc-text-field--fullwidth` | Styles the text field as a full width text field
+`mdc-text-field--textarea` | Indicates the text field is a `<textarea>`
+`mdc-text-field--disabled` | Styles the text field as a disabled text field
+`mdc-text-field--dense` | Styles the text field as a dense text field
+`mdc-text-field--with-leading-icon` | Styles the text field as a text field with a leading icon
+`mdc-text-field--with-trailing-icon` | Styles the text field as a text field with a trailing icon
+`mdc-text-field--focused` | Styles the text field as a text field in focus
 
 #### HTML5 Validation
 
@@ -147,23 +173,7 @@ See [here](helper-text/) for more information on using helper text.
 Leading and trailing icons can be added within the box or outlined variants of MDC Text Field as visual indicators as
 well as interaction targets. See [here](icon/) for more information on using icons.
 
-### CSS Classes
-
-CSS Class | Description
---- | ---
-`mdc-text-field` | Mandatory
-`mdc-text-field--upgraded` | Indicates the text field is upgraded, normally by JavaScript
-`mdc-text-field--box` | Styles the text field as a box text field
-`mdc-text-field--outlined` | Styles the text field as an outlined text field
-`mdc-text-field--fullwidth` | Styles the text field as a full width text field
-`mdc-text-field--textarea` | Indicates the text field is a `<textarea>`
-`mdc-text-field--disabled` | Styles the text field as a disabled text field
-`mdc-text-field--dense` | Styles the text field as a dense text field
-`mdc-text-field--with-leading-icon` | Styles the text field as a text field with a leading icon
-`mdc-text-field--with-trailing-icon` | Styles the text field as a text field with a trailing icon
-`mdc-text-field--focused` | Styles the text field as a text field in focus
-
-### Sass Mixins
+### Style Customization with Sass Mixins
 
 To customize the colors of any part of the text-field, use the following mixins. We recommend you apply
 these mixins within CSS selectors like `.foo-text-field:not(.mdc-text-field--focused)` to select your unfocused text fields,
@@ -189,8 +199,6 @@ Mixin | Description
 
 ### `MDCTextField`
 
-See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
-
 Property | Value Type | Description
 --- | --- | ---
 `value` | String | Proxies to the foundation's `getValue`/`setValue` methods.
@@ -207,6 +215,10 @@ Method Signature | Description
 ##### `MDCTextField.ripple`
 
 `MDCRipple` instance. When given an `mdc-text-field--box` root element, this is set to the `MDCRipple` instance on the root element. When given an `mdc-text-field--outlined` root element, this is set to the `MDCRipple` instance on the `mdc-text-field__outline` element. Otherwise, the field is set to `null`.
+
+## Integrating `MDCTextField` into Frameworks
+
+If you are using a JavaScript framework, such as React or Angular2, you can create an MDC component for your framework by wrapping MDC Web components. Depending on your framework, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).  
 
 ### `MDCTextFieldAdapter`
 
