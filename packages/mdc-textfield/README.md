@@ -197,7 +197,7 @@ Mixin | Description
 `mdc-text-field-textarea-fill-color($color)` | Customizes the color of the background of the textarea.
 `mdc-text-field-textarea-stroke-color($color)` | Customizes the color of the border of the textarea.
 
-### `MDCTextField`
+### `MDCTextField` Properties and Methods
 
 Property | Value Type | Description
 --- | --- | ---
