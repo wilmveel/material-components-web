@@ -57,7 +57,11 @@ const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 ## Usage Options and Variants
 
-CSS Class | Description
+### HTML Structure
+
+You can add the following classes to the HTML structure to style your text field.
+
+Class | Description
 --- | ---
 `mdc-text-field` | Mandatory
 `mdc-text-field--upgraded` | Indicates the text field is upgraded, normally by JavaScript
