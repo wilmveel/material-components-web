@@ -59,7 +59,7 @@ const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 ### HTML Structure
 
-You can add the following classes to the HTML structure to style your text field.
+You can add the following classes to style your text field.
 
 Class | Description
 --- | ---
